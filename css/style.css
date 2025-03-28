@@ -1,0 +1,136 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Frank Ruhl Libre', serif; /* Cập nhật font chữ */
+}
+
+body {
+    overflow-y: scroll; /* Luôn hiển thị thanh cuộn để tránh nhảy layout */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.header {
+    font-family: 'Libre Baskerville', serif; /* Font mới cho Header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 40px 150px;
+    height: 80px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    gap: 10px; /* Khoảng cách giữa ảnh và chữ */
+}
+
+.logo img {
+    width: 40px; /* Điều chỉnh kích thước logo */
+    height: 40px;
+    object-fit: contain;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    /* background: yellow; */
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+/* Hiệu ứng gạch chân khi di chuột vào */
+.nav-links li a {
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+    font-size: 18px;
+    transition: 0.3s;
+    position: relative;
+    padding-bottom: 5px; /* Khoảng cách với chữ */
+}
+
+.nav-links li a.active {
+    color: #020207; /* Màu khi được chọn */
+    font-weight: bold;
+}
+
+/* Khi hover thì có gạch chân */
+.nav-links li a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #020208;
+}
+
+/* Footer */
+.footer {
+    height: 270px;
+    background: #1a1a1a;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #4F46E5;
+}
+
+.footer-section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+
+

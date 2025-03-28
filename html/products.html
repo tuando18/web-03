@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Online</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/products/products.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Frank+Ruhl+Libre:wght@300..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1 class="logo">
+            <img src="/images/logo.png" alt="Shop Logo">
+            Shop Online
+        </h1>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/" >Trang Chủ</a></li>
+                <li><a href="#" class="active">Sản Phẩm</a></li>
+                <li><a href="about.html">Về Chúng Tôi</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="banner" class="banner">
+        <div class="banner-content">
+            <h2>Ralph Lauren Spring 2025</h2>
+            <h1>Ralph's Hamptons</h1>
+            <div class="category-buttons">
+                <button onclick="showProducts('men')">Men</button>
+                <button onclick="showProducts('women')">Women</button>
+                <button onclick="showProducts('boys')">Boys</button>
+                <button onclick="showProducts('girls')">Girls</button>
+                <button onclick="showProducts('home')">Home</button>
+            </div>            
+        </div>
+    </section>
+
+    <section id="bestsellers" class="bestsellers-section">
+        <div class="container2">
+            <div class="product-list">
+                <!-- Sản phẩm Men -->
+                <div class="product" data-category="men" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product1.jpg" alt="Men Product 1">
+                    <h3>Men's Leather Jacket</h3>
+                    <p>Giá: 3.500.000đ</p>
+                </div>
+                <div class="product" data-category="men" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product2.jpg" alt="Men Product 2">
+                    <h3>Men's Casual Shirt</h3>
+                    <p>Giá: 1.200.000đ</p>
+                </div>
+                <div class="product" data-category="men" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product3.jpg" alt="Men Product 3">
+                    <h3>Men's Jeans</h3>
+                    <p>Giá: 1.500.000đ</p>
+                </div>
+                <div class="product" data-category="men" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product1.jpg" alt="Men Product 4">
+                    <h3>Men's Suit</h3>
+                    <p>Giá: 4.000.000đ</p>
+                </div>
+                <div class="product" data-category="men" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product2.jpg" alt="Men Product 5">
+                    <h3>Men's Sweater</h3>
+                    <p>Giá: 1.800.000đ</p>
+                </div>
+                <div class="product" data-category="men" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product1.jpg" alt="Men Product 6">
+                    <h3>Men's Sneakers</h3>
+                    <p>Giá: 2.000.000đ</p>
+                </div>
+    
+                <!-- Sản phẩm Women -->
+                <div class="product" data-category="women" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product3.jpg" alt="Women Product 1">
+                    <h3>Women's Silk Dress</h3>
+                    <p>Giá: 2.800.000đ</p>
+                </div>
+                <div class="product" data-category="women" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product1.jpg" alt="Women Product 1">
+                    <h3>Women's Silk Dress</h3>
+                    <p>Giá: 2.800.000đ</p>
+                </div>
+                <div class="product" data-category="women" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product2.jpg" alt="Women Product 1">
+                    <h3>Women's Silk Dress</h3>
+                    <p>Giá: 2.800.000đ</p>
+                </div>
+                <div class="product" data-category="women" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product3.jpg" alt="Women Product 1">
+                    <h3>Women's Silk Dress</h3>
+                    <p>Giá: 2.800.000đ</p>
+                </div>
+                <div class="product" data-category="women" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product1.jpg" alt="Women Product 1">
+                    <h3>Women's Silk Dress</h3>
+                    <p>Giá: 2.800.000đ</p>
+                </div>    
+                <div class="product" data-category="women" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product2.jpg" alt="Women Product 1">
+                    <h3>Women's Silk Dress</h3>
+                    <p>Giá: 2.800.000đ</p>
+                </div>
+                
+                <!-- Sản phẩm Boys -->
+                <div class="product" data-category="boys" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product2.jpg" alt="Boys Product 1">
+                    <h3>Boy's Sports Jacket</h3>
+                    <p>Giá: 1.500.000đ</p>
+                </div>
+                <div class="product" data-category="boys" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product1.jpg" alt="Boys Product 1">
+                    <h3>Boy's Sports Jacket</h3>
+                    <p>Giá: 1.500.000đ</p>
+                </div>
+                <div class="product" data-category="boys" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product3.jpg" alt="Boys Product 1">
+                    <h3>Boy's Sports Jacket</h3>
+                    <p>Giá: 1.500.000đ</p>
+                </div>
+                <div class="product" data-category="boys" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product1.jpg" alt="Boys Product 1">
+                    <h3>Boy's Sports Jacket</h3>
+                    <p>Giá: 1.500.000đ</p>
+                </div>
+                <div class="product" data-category="boys" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product2.jpg" alt="Boys Product 1">
+                    <h3>Boy's Sports Jacket</h3>
+                    <p>Giá: 1.500.000đ</p>
+                </div>
+                <div class="product" data-category="boys" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product3.jpg" alt="Boys Product 1">
+                    <h3>Boy's Sports Jacket</h3>
+                    <p>Giá: 1.500.000đ</p>
+                </div>
+    
+                <!-- Sản phẩm Girls -->
+                <div class="product" data-category="girls" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product3.jpg" alt="Girls Product 1">
+                    <h3>Girl's Floral Dress</h3>
+                    <p>Giá: 1.700.000đ</p>
+                </div>
+                <div class="product" data-category="girls" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product2.jpg" alt="Girls Product 1">
+                    <h3>Girl's Floral Dress</h3>
+                    <p>Giá: 1.700.000đ</p>
+                </div>
+                <div class="product" data-category="girls" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product1.jpg" alt="Girls Product 1">
+                    <h3>Girl's Floral Dress</h3>
+                    <p>Giá: 1.700.000đ</p>
+                </div>
+                <div class="product" data-category="girls" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product3.jpg" alt="Girls Product 1">
+                    <h3>Girl's Floral Dress</h3>
+                    <p>Giá: 1.700.000đ</p>
+                </div>
+                <div class="product" data-category="girls" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product2.jpg" alt="Girls Product 1">
+                    <h3>Girl's Floral Dress</h3>
+                    <p>Giá: 1.700.000đ</p>
+                </div>
+                <div class="product" data-category="girls" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product1.jpg" alt="Girls Product 1">
+                    <h3>Girl's Floral Dress</h3>
+                    <p>Giá: 1.700.000đ</p>
+                </div>
+    
+                <!-- Sản phẩm Home -->
+                <div class="product" data-category="home" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product2.jpg" alt="Home Product 1">
+                    <h3>Luxury Silk Pillow</h3>
+                    <p>Giá: 900.000đ</p>
+                </div>
+                <div class="product" data-category="home" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product3.jpg" alt="Home Product 1">
+                    <h3>Luxury Silk Pillow</h3>
+                    <p>Giá: 900.000đ</p>
+                </div>
+                <div class="product" data-category="home" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product1.jpg" alt="Home Product 1">
+                    <h3>Luxury Silk Pillow</h3>
+                    <p>Giá: 900.000đ</p>
+                </div>
+                <div class="product" data-category="home" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product3.jpg" alt="Home Product 1">
+                    <h3>Luxury Silk Pillow</h3>
+                    <p>Giá: 900.000đ</p>
+                </div>
+                <div class="product" data-category="home" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product1.jpg" alt="Home Product 1">
+                    <h3>Luxury Silk Pillow</h3>
+                    <p>Giá: 900.000đ</p>
+                </div>
+                <div class="product" data-category="home" style="display: none;">
+                    <div class="like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="/images/products/product2.jpg" alt="Home Product 1">
+                    <h3>Luxury Silk Pillow</h3>
+                    <p>Giá: 900.000đ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h2 style="text-align: center; margin-bottom: 30px; font-size: 24px; font-weight: bold; color: #333; font-size: 48px; padding: 30px;">
+        Bộ Sưu Tập Mới Nhất
+    </h2>
+    
+
+    <div class="slider-container">
+        <button class="prev-btn">❮</button>
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img src="/images/products/product3.jpg" alt="Image 1">
+                <img src="/images/products/product2.jpg" alt="Image 2">
+                <img src="/images/products/product1.jpg" alt="Image 3">
+                <img src="/images/products/product3.jpg" alt="Image 4">
+                <img src="/images/products/product2.jpg" alt="Image 5">
+                <img src="/images/products/product3.jpg" alt="Image 6">
+                <img src="/images/products/product1.jpg" alt="Image 7">
+                <img src="/images/products/product2.jpg" alt="Image 8">
+            </div>
+        </div>
+        <button class="next-btn">❯</button>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Cột 1: Về chúng tôi -->
+            <div class="footer-section">
+                <h3>Về Chúng Tôi</h3>
+                <p>Shop Online chuyên cung cấp các sản phẩm chất lượng cao với giá cả hợp lý.</p>
+            </div>
+
+            <!-- Cột 2: Liên hệ -->
+            <div class="footer-section">
+                <h3>Liên Hệ</h3>
+                <p><strong>Email:</strong> support@shoponline.com</p>
+                <p><strong>Điện thoại:</strong> 0123-456-789</p>
+                <p><strong>Địa chỉ:</strong> 123 Đường ABC, TP. Hà Nội</p>
+            </div>
+
+            <!-- Cột 3: Mạng xã hội -->
+            <div class="footer-section">
+                <h3>Theo Dõi Chúng Tôi</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="/images/icons/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="/images/icons/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="/images/icons/tiktok.png" alt="Tiktok"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
