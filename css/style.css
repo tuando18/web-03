@@ -35,7 +35,8 @@ body {
     align-items: center;
     font-size: 24px;
     font-weight: bold;
-    color: black;
+    color: rgb(39, 39, 39);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     gap: 10px; /* Khoảng cách giữa ảnh và chữ */
 }
 
@@ -108,7 +109,7 @@ body {
 .footer-section h3 {
     font-size: 20px;
     margin-bottom: 15px;
-    color: #4F46E5;
+    color: #ff69b4;
 }
 
 .footer-section p {
